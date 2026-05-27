@@ -1,0 +1,19 @@
+{
+  "sqltools.connections": [
+    {
+      "name": "PostgreSQL Local",
+      "driver": "PostgreSQL",
+      "server": "localhost",
+      "port": 5432,
+      "database": "postgres",
+      "username": "postgres",
+      "password": ""
+    }
+  ],
+  "sql-formatter.uppercase": true,
+  "sql-formatter.linesBetweenQueries": 2,
+  "[sql]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  }
+}
