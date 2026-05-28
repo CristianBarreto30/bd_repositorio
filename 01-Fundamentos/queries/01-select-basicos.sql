@@ -83,7 +83,7 @@ WHERE EXISTS (
 
 
 -- =========================================================
--- 8. MÚLTIPLES JOINS
+-- 7. MÚLTIPLES JOINS
 -- Información completa de pedidos
 -- =========================================================
 
@@ -101,7 +101,7 @@ INNER JOIN shared.productos pr
     ON dp.producto_id = pr.producto_id;
 
 -- =========================================================
--- 9. CASE
+-- 8. CASE
 -- Clasificación de productos según precio
 -- =========================================================
 
@@ -119,7 +119,7 @@ SELECT
 FROM shared.productos;
 
 -- =========================================================
--- 10. CTE (COMMON TABLE EXPRESSION)
+-- 9. CTE (COMMON TABLE EXPRESSION)
 -- Productos con stock bajo
 -- =========================================================
 -- with es para crear una tabla temporal llamada stock_bajo,
@@ -138,7 +138,7 @@ FROM stock_bajo
 ORDER BY stock ASC;
 
 -- =========================================================
--- 12. CONSULTA ANALÍTICA
+-- 10. CONSULTA ANALÍTICA
 -- Total gastado por cliente
 -- =========================================================
 
