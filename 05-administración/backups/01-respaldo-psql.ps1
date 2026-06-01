@@ -1,3 +1,19 @@
+<#
+-- BACKUP DE BASE DE DATOS POSTGRESQL
+--
+-- ¿Qué es un backup?
+-- Un backup o copia de seguridad es una exportación de la base de datos
+-- que permite recuperar la información ante errores, pérdida de datos,
+-- fallos del sistema o migraciones a otros entornos.
+--
+-- Este archivo contiene:
+-- - Estructura de la base de datos (tablas, índices, vistas, etc.).
+-- - Datos almacenados en las tablas.
+-- - Sentencias para recrear los objetos necesarios.
+--
+-- Fecha de generación: 2026-06-01
+-- Base de datos: db_portfolio
+#>
 # Backup de base de datos PostgreSQL con PowerShell
 # Requiere: pg_dump en el PATH o ruta completa
 

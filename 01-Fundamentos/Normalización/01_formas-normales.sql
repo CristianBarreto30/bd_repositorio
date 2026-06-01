@@ -65,6 +65,10 @@ CREATE TABLE pedidos_normalizado (
 );
 
 CREATE TABLE pedido_detalles_normalizado (
+    --el interger references es para establecer la relación entre las tablas, 
+    --indicando que pedido_id hace referencia a la columna id de la tabla pedidos_normalizado,
+    -- y producto_id hace referencia a la columna id de la tabla productos_normalizado. 
+    --Esto asegura la integridad referencial, es decir, que no se puedan insertar detalles de pedido para pedidos o productos que no existan.
     pedido_id   INTEGER REFERENCES pedidos_normalizado(id),
     producto_id INTEGER REFERENCES productos_normalizado(id),
     cantidad    INTEGER NOT NULL CHECK (cantidad > 0),

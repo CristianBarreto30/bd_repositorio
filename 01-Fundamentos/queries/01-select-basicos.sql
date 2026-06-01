@@ -136,19 +136,3 @@ WITH stock_bajo AS (
 SELECT *
 FROM stock_bajo
 ORDER BY stock ASC;
-
--- =========================================================
--- 10. CONSULTA ANALÍTICA
--- Total gastado por cliente
--- =========================================================
-
-SELECT
-    c.nombre,
-    SUM(dp.total_pedido) AS total_gastado
-FROM shared.clientes c
-INNER JOIN shared.pedidos p
-    ON c.cliente_id = p.cliente_id
-INNER JOIN shared.detalle_pedidos dp
-    ON p.pedido_id = dp.pedido_id
-GROUP BY c.nombre
-ORDER BY total_gastado DESC;
